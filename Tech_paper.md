@@ -23,19 +23,18 @@ Internet is an untrusted network of connected computers. When we try to connect/
 >## Techniques 
 
 There are several different ways security firewalls can monitor and regulate network traffic.
-* **Packet filtering** 
+1) **Packet filtering** 
 
-      Packets are small quantities of information. If a firewall uses packet filtering, it runs a group of checks against packets attempting to reach the network. These filters block packets that correspond to certain threats listed and allow others to access their intended destination. 
-
-
-* **Proxy service**
-
-      Instead of serving as a filtration system that data passes through, proxy servers function as go-betweens. They avoid direct communications between the client system and the incoming packets, securing the network location from unknown malicious users, by effectively creating a copy of the system behind the firewall. These firewalls are extremely stable but have some drawbacks. They function more slowly than other firewall types and are therefore constrained in terms of the kinds of applications that they can serve.
+   * Packets are small quantities of information. If a firewall uses packet filtering, it runs a group of checks against packets attempting to reach the network. These filters block packets that correspond to certain threats listed and allow others to access their intended destination. 
 
 
-* **Stateful inspection**
+2) **Proxy service**
+     *  Instead of serving as a filtration system that data passes through, proxy servers function as go-betweens. They avoid direct communications between the client system and the incoming packets, securing the network location from unknown malicious users, by effectively creating a copy of the system behind the firewall. These firewalls are extremely stable but have some drawbacks. They function more slowly than other firewall types and are therefore constrained in terms of the kinds of applications that they can serve.
 
-      Where the packet headers are checked by static filtering, host-based firewalls analyze a variety of elements of each data packet and compare them to a trusted knowledge database. These elements include IP addresses, ports, and applications from the source and destination. To be allowed through the firewall, incoming data packets are required to adequately match the trusted information.  
+
+3) **Stateful inspection**
+
+   * Where the packet headers are checked by static filtering, host-based firewalls analyze a variety of elements of each data packet and compare them to a trusted knowledge database. These elements include IP addresses, ports, and applications from the source and destination. To be allowed through the firewall, incoming data packets are required to adequately match the trusted information.  
   
 > ## Limitations
 
